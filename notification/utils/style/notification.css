@@ -1,0 +1,140 @@
+.el-notification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 330px;
+  padding: 12px 26px 12px 1px;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #EBEEF5;
+  position: fixed;
+  background-color: #395965;
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+  -webkit-transition: opacity .3s, left .3s, right .3s, top .4s, bottom .3s, -webkit-transform .3s;
+  transition: opacity .3s, left .3s, right .3s, top .4s, bottom .3s, -webkit-transform .3s;
+  transition: opacity .3s, transform .3s, left .3s, right .3s, top .4s, bottom .3s;
+  transition: opacity .3s, transform .3s, left .3s, right .3s, top .4s, bottom .3s, -webkit-transform .3s;
+  overflow: hidden
+}
+
+.el-notification.right {
+  right: 16px
+}
+
+.el-notification.left {
+  left: 16px
+}
+
+.el-notification__group {
+  margin-left: 1px;
+  margin-right: 8px
+}
+
+.el-notification__title {
+  width: 258px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #f7fbe1;
+  /*margin: 0;*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.el-notification__content {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 6px 0 0;
+  color: #f7fbe1;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.el-notification__content p {
+  margin: 0
+}
+
+.el-notification__icon {
+  margin-top: 0px;
+  margin-right: 5px;
+  margin-left: 10px;
+  height: 24px;
+  width: 24px;
+  font-size: 24px
+}
+
+.el-notification__closeBtn {
+  position: absolute;
+  top: 13px;
+  right: 5px;
+  cursor: pointer;
+  color: #909399;
+  font-size: 16px
+}
+
+.el-notification__closeBtn:hover {
+  color: #EE311B
+}
+/*设置消息不同类型的背景颜色和文字颜色*/
+.icon-success {
+  background-color: #21bf73
+}
+.icon-error {
+  background-color: #f44336
+}
+.icon-info {
+  background-color: #0fabbc
+}
+.icon-warning {
+  background-color: #ef962d;
+}
+/*设置消息不同类型的图标颜色*/
+.iconcolor-success {
+  color: #cff6cf !important;
+}
+.iconcolor-error {
+  color: #ffcbcb !important;
+}
+.iconcolor-info {
+  color: #d4f3ef !important;
+}
+.iconcolor-warning {
+  color: #fee2b3 !important;
+}
+.iconcolor-default {
+  color: #f7fbe1 !important;
+}
+/*.el-notification .el-icon-success {*/
+/*  color: #67C23A*/
+/*}*/
+
+/*.el-notification .el-icon-error {*/
+/*  color: #F56C6C*/
+/*}*/
+
+/*.el-notification .el-icon-info {*/
+/*  color: #909399*/
+/*}*/
+
+/*.el-notification .el-icon-warning {*/
+/*  color: #E6A23C*/
+/*}*/
+
+.el-notification-fade-enter.right {
+  right: 0;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%)
+}
+
+.el-notification-fade-enter.left {
+  left: 0;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%)
+}
+
+.el-notification-fade-leave-active {
+  opacity: 0
+}
